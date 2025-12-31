@@ -1,5 +1,8 @@
 package atu.ie.lab4.exception;
 
-public class DuplicatePassengerException {
-
+public class DuplicatePassengerException extends RuntimeException {
+    public DuplicatePassengerException(String message) {
+        super(message);
+    }
 }
+
